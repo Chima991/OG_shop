@@ -1,0 +1,32 @@
+<nav>
+    <div class="nav-wrapper purple darken">
+      <a href="#" class="brand-logo">OG Shop</a>
+      <ul id="nav-mobile" class="right hide-on-med-and-down">
+        
+
+        {{#if isHome}}
+          <li class="active"><a href="/">Главная страница</a></li>
+        {{else}}
+          <li><a href="/">Главная страница</a></li>
+        {{/if}}
+
+        {{#if isGoods}}
+          <li class="active"><a href="/goods">Товары</a></li>
+        {{else}}
+          <li><a href="/goods">Товары</a></li>
+        {{/if}}
+
+        {{#if isAdd}}
+          <li class="active"><a href="/add">Добавить свой товар</a></li>
+        {{else}}
+          <li><a href="/add">Добавить свой товар</a></li>
+        {{/if}}
+
+        {{#if isCard}}
+          <li class="active"><a href="/card">Корзина</a></li>
+        {{else}}
+          <li><a href="/card">Корзина</a></li>
+        {{/if}}
+      </ul>
+    </div>
+  </nav>
